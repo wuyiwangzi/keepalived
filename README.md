@@ -1,4 +1,3 @@
-# keepalived
-dockerd keepalived for synology
+# dockerd keepalived for synology
 
-docker run --privileged --net=host --volume /volume1/docker/keepalived/keepalived.conf:/etc/keepalived/keepalived.conf -it --restart=always wuyiwangzi/keepalived
+docker run --privileged --net=host --volume /volume1/docker/keepalived/keepalived.conf:/etc/keepalived/keepalived.conf --restart=always  -d --name keepalived wuyiwangzi/keepalived
