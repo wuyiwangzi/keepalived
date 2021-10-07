@@ -9,4 +9,4 @@ RUN apt-get update && \
 
 COPY keepalived.conf /etc/keepalived/
 
-CMD keepalived -f /etc/keepalived/keepalived.conf -n -l -D
+CMD rm -rf /var/run/keepalived.pid && keepalived -f /etc/keepalived/keepalived.conf -n -l -D
